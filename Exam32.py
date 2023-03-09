@@ -14,12 +14,12 @@ print(list_input)
 
 def find_index(list_in):
     list_index=[]
-    start_value=int(input("Ищем числа от: "))   #5
-    end_value=int(input("... до: "))            #10
+    start_value=int(input("Ищем числа от: "))
+    end_value=int(input("... до: "))
     for i in range(start_value,end_value):
         for j in range(len(list_in)):
             if list_in[j]==i:
-                list_index.append(list_in[j])
+                list_index.append(j)
     print(list_index)
 
 find_index(list_input)
